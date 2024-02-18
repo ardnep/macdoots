@@ -113,9 +113,6 @@ source $ZSH/oh-my-zsh.sh
 #
 # Aliases
 alias f="ranger"
-alias gpu="__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia"
-alias bconhead="bluetoothctl connect 00:16:94:2D:2C:FF"
-alias bconair="bluetoothctl connect 98:DD:60:BD:17:3B"
 alias current="cd /Users/ardnep/Library/Mobile\ Documents/com~apple~CloudDocs/y3s1"
 alias pyvenv="python3 -m venv .venv && source .venv/bin/activate"
 alias hypo="cd $HOME/Documents/undergrad/job-internships/hypo/"
