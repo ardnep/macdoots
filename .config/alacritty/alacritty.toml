@@ -1,0 +1,21 @@
+import = ["~/.config/alacritty/catppuccin-mocha.toml"]
+
+[font]
+size = 16.0
+
+[font.normal]
+family = "FiraCode Nerd Font Mono"
+style = "Regular"
+
+[window]
+decorations = "buttonless"
+opacity = 1
+title = "Alacritty"
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.padding]
+x = 5
+y = 5
