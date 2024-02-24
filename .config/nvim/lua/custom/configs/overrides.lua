@@ -62,4 +62,24 @@ M.nvimtree = {
 	},
 }
 
+M.gitsigns = {
+	current_line_blame = true,
+	current_line_blame_formatter = "<author>, <author_time:%b-%d-%Y> - <summary>",
+}
+
+M.copilot = {
+	-- Possible configurable fields can be found on:
+	-- https://github.com/zbirenbaum/copilot.lua#setup-and-configuration
+	suggestion = {
+		enable = true,
+		auto_trigger = true,
+		keymap = {
+			accept = "<Tab>",
+		},
+	},
+	panel = {
+		enable = false,
+	},
+}
+
 return M

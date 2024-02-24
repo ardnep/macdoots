@@ -2,21 +2,23 @@
 local M = {}
 
 M.general = {
-  n = {
-    [";"] = { ":", "enter command mode", opts = { nowait = true } },
+	n = {
+		[";"] = { ":", "enter command mode", opts = { nowait = true } },
 
-    --  format with conform
-    ["<leader>fm"] = {
-      function()
-        require("conform").format()
-      end,
-      "formatting",
-    }
+		--  format with conform
+		["<leader>fm"] = {
+			function()
+				require("conform").format()
+			end,
+			"formatting",
+		},
 
-  },
-  v = {
-    [">"] = { ">gv", "indent"},
-  },
+		["<leader>ld"] = { "<cmd>Telescope diagnostics<CR>", "Show all diagnostics" },
+	},
+
+	v = {
+		[">"] = { ">gv", "indent" },
+	},
 }
 
 -- more keybinds!
