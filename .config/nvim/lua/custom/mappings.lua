@@ -14,6 +14,7 @@ M.general = {
 		},
 
 		["<leader>ld"] = { "<cmd>Telescope diagnostics<CR>", "Show all diagnostics" },
+		["<leader>gg"] = { "<cmd>LazyGitCurrentFile<CR>", "Open LazyGit" },
 	},
 
 	v = {

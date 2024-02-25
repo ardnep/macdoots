@@ -33,6 +33,19 @@ local plugins = {
 		opts = overrides.gitsigns,
 	},
 
+	{
+		"hrsh7th/nvim-cmp",
+		dependencies = {
+			{
+				"zbirenbaum/copilot-cmp",
+				config = function()
+					require("copilot_cmp").setup()
+				end,
+			},
+		},
+		opts = overrides.cmp,
+	},
+
 	-- Install a plugin
 	{
 		"max397574/better-escape.nvim",
@@ -66,40 +79,13 @@ local plugins = {
 	},
 
 	{
-		"hrsh7th/nvim-cmp",
+		"kdheepak/lazygit.nvim",
+		-- optional for floating window border decoration
+		cmd = { "LazyGit", "LazyGitCurrentFile" },
 		dependencies = {
-			{
-				"zbirenbaum/copilot-cmp",
-				config = function()
-					require("copilot_cmp").setup()
-				end,
-			},
-		},
-		opts = {
-			sources = {
-				{ name = "nvim_lsp", group_index = 2 },
-				{ name = "copilot", group_index = 2 },
-				{ name = "luasnip", group_index = 2 },
-				{ name = "buffer", group_index = 2 },
-				{ name = "nvim_lua", group_index = 2 },
-				{ name = "path", group_index = 2 },
-			},
+			"nvim-lua/plenary.nvim",
 		},
 	},
-
-	-- To make a plugin not be loaded
-	-- {
-	--   "NvChad/nvim-colorizer.lua",
-	--   enabled = false
-	-- },
-
-	-- All NvChad plugins are lazy-loaded by default
-	-- For a plugin to be loaded, you will need to set either `ft`, `cmd`, `keys`, `event`, or set `lazy = false`
-	-- If you want a plugin to load on startup, add `lazy = false` to a plugin spec, for example
-	-- {
-	--   "mg979/vim-visual-multi",
-	--   lazy = false,
-	-- }
 }
 
 return plugins
