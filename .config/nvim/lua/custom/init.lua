@@ -19,3 +19,5 @@ end
 
 vim.cmd("runtime! plugin/rplugin.vim")
 vim.cmd("UpdateRemotePlugins")
+
+vim.opt.winbar = "%{%v:lua.require'nvim-navic'.get_location()%}"
