@@ -17,7 +17,4 @@ for _, plugin in pairs(enable_providers) do
 	vim.cmd("runtime " .. plugin)
 end
 
-vim.cmd("runtime! plugin/rplugin.vim")
-vim.cmd("UpdateRemotePlugins")
-
 vim.opt.winbar = "%{%v:lua.require'nvim-navic'.get_location()%}"

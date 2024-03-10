@@ -21,10 +21,12 @@ M.general = {
 			end,
 			"Find symbols in document",
 		},
+		["<leader>ccw"] = { "<cmd>CopilotChatToggle<CR>", "Toggle Copilot Chat Window" },
 	},
 
 	v = {
 		[">"] = { ">gv", "indent" },
+		["<leader>cc"] = { ":CopilotChat ", "Chat with Copilot" },
 	},
 }
 
