@@ -141,6 +141,14 @@ local plugins = {
 			},
 		},
 	},
+	{
+		"nvim-treesitter/nvim-treesitter-context",
+		event = "VeryLazy",
+		enable = true,
+		opts = {
+			mode = "topline",
+		},
+	},
 }
 
 return plugins
