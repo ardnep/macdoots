@@ -10,6 +10,7 @@ export PATH="$PATH:$HOME/Library/Android/sdk/tools/bin"
 export PATH="$PATH:$HOME/dev/flutter/bin"
 export PATH="$PATH:$HOME/.config/emacs/bin/"
 export PATH="$PATH:$(yarn global bin)"
+export PATH="$PATH:$HOME/scripts/"
 # export WORKON_HOME=$HOME/.virtualenvs
 # export PROJECT_HOME=$HOME/Devel
 # source /opt/homebrew/bin/virtualenvwrapper.sh
