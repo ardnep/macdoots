@@ -142,12 +142,16 @@ local plugins = {
 		},
 	},
 	{
-		"nvim-treesitter/nvim-treesitter-context",
+		"SmiteshP/nvim-navic",
+		dependencies = {
+			"neovim/nvim-lspconfig",
+		},
 		event = "VeryLazy",
-		enable = true,
 		opts = {
-			mode = "topline",
-			separator = "-",
+			lsp = {
+				auto_attach = true,
+			},
+			highlight = true,
 		},
 	},
 }
