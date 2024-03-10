@@ -6,14 +6,16 @@ local M = {}
 
 ---@type Base46HLGroupsList
 M.override = {
-  Comment = {
-    italic = true,
-  },
+	Comment = {
+		italic = true,
+	},
 }
 
 ---@type HLTable
 M.add = {
-  NvimTreeOpenedFolderName = { fg = "green", bold = true },
+	NvimTreeOpenedFolderName = { fg = "green", bold = true },
+	TreesitterContext = { bg = "lightbg" },
+	TreesitterContextSeparator = { fg = "grey" },
 }
 
 return M

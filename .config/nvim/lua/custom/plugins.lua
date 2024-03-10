@@ -147,6 +147,7 @@ local plugins = {
 		enable = true,
 		opts = {
 			mode = "topline",
+			separator = "-",
 		},
 	},
 }

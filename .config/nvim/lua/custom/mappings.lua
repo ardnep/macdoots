@@ -13,6 +13,14 @@ M.general = {
 
 		["<leader>ld"] = { "<cmd>Telescope diagnostics<CR>", "Show all diagnostics" },
 		["<leader>gg"] = { "<cmd>LazyGitCurrentFile<CR>", "Open LazyGit" },
+		["<leader>fs"] = {
+			function()
+				require("telescope.builtin").lsp_document_symbols({
+					symbols = { "class", "method", "function", "interface", "module" },
+				})
+			end,
+			"Find symbols in document",
+		},
 	},
 
 	v = {
