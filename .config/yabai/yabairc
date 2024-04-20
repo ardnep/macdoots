@@ -39,9 +39,6 @@ yabai -m rule --add app="^kitty$" manage=off sticky=on grid=1:1:1:1:1:1
 # OPEN APPS IN THEIR RESPECTIVE SPACES
 ########################################## 
 
-# by default, open all apps in scratch
-yabai -m rule --add app=".*" space=scratch
-
 # browse
 yabai -m rule --add app="^Firefox$" space=browse
 yabai -m rule --add app="^Firefox Developer Edition$" space=browse
