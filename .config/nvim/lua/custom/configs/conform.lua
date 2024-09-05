@@ -13,6 +13,7 @@ local options = {
 		svelte = { "prettier" },
 		css = { "prettier" },
 		html = { "prettier" },
+		rust = { "rustfmt" },
 
 		sh = { "shfmt" },
 
