@@ -18,3 +18,7 @@ for _, plugin in pairs(enable_providers) do
 end
 
 vim.opt.winbar = "%{%v:lua.require'nvim-navic'.get_location()%}"
+vim.cmd([[
+  highlight WinBar guibg=none
+  highlight WinBarNC guibg=none
+]])
