@@ -20,6 +20,14 @@ M.add = {
 	NvimTreeOpenedFolderName = { fg = "green", bold = true },
 	TreesitterContext = { bg = "lightbg" },
 	TreesitterContextSeparator = { fg = "grey" },
+	-- In nvim 0.10, the default colorschemes were changed
+	-- which resulted in the winbar having a black background.
+	-- If my sanity is still intact, this is the commit
+	-- responsible:
+	-- https://github.com/neovim/neovim/commit/0c850add3ecedec5b7dea62f0dd152f3421b66fc
+	-- The following is a temp fix which makes the winbar transparent
+	WinBar = {},
+	WinBarNC = {},
 
 	-- navic stuff
 	NavicIconsFile = navic_default_color,

@@ -18,12 +18,3 @@ for _, plugin in pairs(enable_providers) do
 end
 
 vim.opt.winbar = "%{%v:lua.require'nvim-navic'.get_location()%}"
-
--- In nvim 0.10, the default colorschemes were changed
--- which resulted in the winbar having a black background.
--- If my sanity is still intact, this is the commit
--- responsible:
--- https://github.com/neovim/neovim/commit/0c850add3ecedec5b7dea62f0dd152f3421b66fc
--- The following reverts the winbar to the previous state
-vim.api.nvim_set_hl(0, "WinBar", {})
-vim.api.nvim_set_hl(0, "WinBarNC", {})
