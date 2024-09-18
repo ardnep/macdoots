@@ -12,6 +12,8 @@ export PATH="$PATH:$HOME/.config/emacs/bin/"
 export PATH="$PATH:$(yarn global bin)"
 export PATH="$PATH:$HOME/scripts/"
 
+export EDITOR=nvim
+
 # export PYENV_ROOT="$HOME/.pyenv"
 # export PATH="$PYENV_ROOT/bin:$PATH"
 # export PYENV_VIRTUALENV_DISABLE_PROMPT=1
@@ -121,7 +123,7 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Aliases
-alias f="ranger"
+alias f="yazi"
 alias current="cd /Users/ardnep/Library/Mobile\ Documents/com~apple~CloudDocs/y3s1"
 alias pyvenv="python3 -m venv .venv && source .venv/bin/activate"
 alias hypo="cd $HOME/Documents/undergrad/job-internships/hypo/"
