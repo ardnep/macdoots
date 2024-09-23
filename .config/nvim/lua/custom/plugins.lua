@@ -118,6 +118,14 @@ local plugins = {
 			click = true,
 		},
 	},
+	{
+		"kylechui/nvim-surround",
+		version = "v3", -- Use for stability; omit to use `main` branch for the latest features
+		event = "VeryLazy",
+		config = function()
+			require("nvim-surround").setup({})
+		end,
+	},
 }
 
 return plugins
