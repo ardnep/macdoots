@@ -22,6 +22,18 @@ M.general = {
 			"Find symbols in document",
 		},
 		["<leader>ccw"] = { "<cmd>CopilotChatToggle<CR>", "Toggle Copilot Chat Window" },
+		["<leader>ct"] = {
+			function()
+				if require("copilot.client").is_disabled() then
+					require("copilot.command").enable()
+					print("Copilot Suggestions Enabled")
+				else
+					require("copilot.command").disable()
+					print("Copilot Suggestions Disabled")
+				end
+			end,
+			"Toggle (Copilot)",
+		},
 	},
 
 	v = {
