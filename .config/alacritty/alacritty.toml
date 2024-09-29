@@ -4,7 +4,7 @@ import = ["~/.config/alacritty/catppuccin-mocha.toml"]
 size = 16.0
 
 [font.normal]
-family = "FiraCode Nerd Font"
+family = "BlexMono Nerd Font"
 style = "Regular"
 
 [window]
