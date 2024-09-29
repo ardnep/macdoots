@@ -128,6 +128,7 @@ alias current="cd /Users/ardnep/Library/Mobile\ Documents/com~apple~CloudDocs/y3
 alias pyvenv="python3 -m venv .venv && source .venv/bin/activate"
 alias hypo="cd $HOME/Documents/undergrad/job-internships/hypo/"
 alias e="nvim"
+alias ls="eza"
 
 # Key bindings
 bindkey -s '\es' '^asudo ^e'

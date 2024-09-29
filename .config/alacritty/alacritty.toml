@@ -1,15 +1,16 @@
-import = ["~/.config/alacritty/catppuccin-mocha.toml"]
+import = ["~/.config/alacritty/everforest-dark.toml"]
 
 [font]
 size = 16.0
 
 [font.normal]
-family = "BlexMono Nerd Font"
+family = "BlexMono Nerd Font Mono"
 style = "Regular"
 
 [window]
 decorations = "buttonless"
-opacity = 0.95
+opacity = 1
+blur = true
 title = "Alacritty"
 
 [window.class]
