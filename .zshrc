@@ -129,6 +129,7 @@ alias pyvenv="python3 -m venv .venv && source .venv/bin/activate"
 alias hypo="cd $HOME/Documents/undergrad/job-internships/hypo/"
 alias e="nvim"
 alias ls="eza"
+alias cat="bat"
 
 # Key bindings
 bindkey -s '\es' '^asudo ^e'
