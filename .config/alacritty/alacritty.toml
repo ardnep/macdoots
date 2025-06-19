@@ -1,4 +1,3 @@
-import = ["~/.config/alacritty/everforest-dark.toml"]
 
 [font]
 size = 16.0
@@ -9,7 +8,7 @@ style = "Regular"
 
 [window]
 decorations = "buttonless"
-opacity = 0.8
+opacity = 1
 blur = true
 title = "Alacritty"
 
@@ -20,3 +19,9 @@ instance = "Alacritty"
 [window.padding]
 x = 10
 y = 10
+
+[general]
+import = ["~/.config/alacritty/everblush.toml"]
+
+[env]
+TERM = "xterm-256color"
