@@ -1,6 +1,9 @@
-[submodule ".config/nvim"]
-	path = .config/nvim
-	url = git@github.com:ardnep/nvim-config.git 
 [submodule ".config/tmux"]
 	path = .config/tmux
-	url = git@github.com:ardnep/tmux-config.git
+	url = https://github.com/ardnep/tmux-config.git
+[submodule ".config/nvim"]
+	path = .config/nvim
+	url = https://github.com/ardnep/nvim-config.git
+[submodule ".hammerspoon/Spoons/VimMode.spoon"]
+  path = .hammerspoon/Spoons/VimMode.spoon
+  url = https://github.com/dbalatero/VimMode.spoon.git

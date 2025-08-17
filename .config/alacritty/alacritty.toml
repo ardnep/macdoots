@@ -1,9 +1,9 @@
 
 [font]
-size = 16.0
+size = 18.0
 
 [font.normal]
-family = "BlexMono Nerd Font Mono"
+family = "JetBrainsMono Nerd Font Mono"
 style = "Regular"
 
 [window]
@@ -25,3 +25,8 @@ import = ["~/.config/alacritty/everblush.toml"]
 
 [env]
 TERM = "xterm-256color"
+
+[[keyboard.bindings]]
+key = "L"
+mods = "Control|Shift"
+chars = "\u001b[99~"

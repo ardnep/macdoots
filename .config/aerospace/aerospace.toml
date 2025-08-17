@@ -126,6 +126,10 @@ automatically-unhide-macos-hidden-apps = true
     alt-3 = 'workspace 3'
     alt-4 = 'workspace 4'
     alt-5 = 'workspace 5'
+    alt-6 = 'workspace 6'
+
+    alt-ctrl-h = 'workspace prev'
+    alt-ctrl-l = 'workspace next'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
     alt-shift-1 = 'move-node-to-workspace 1'
@@ -133,6 +137,7 @@ automatically-unhide-macos-hidden-apps = true
     alt-shift-3 = 'move-node-to-workspace 3'
     alt-shift-4 = 'move-node-to-workspace 4'
     alt-shift-5 = 'move-node-to-workspace 5'
+    alt-shift-6 = 'move-node-to-workspace 6'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     alt-tab = 'focus-back-and-forth'
@@ -177,8 +182,12 @@ automatically-unhide-macos-hidden-apps = true
 [[on-window-detected]]
   if.app-id = 'md.obsidian'
   run = ['move-node-to-workspace 3']  
+
+[[on-window-detected]]
+  if.app-id = 'notion.id'
+  run = ['move-node-to-workspace 3']  
   
-  
+
 [[on-window-detected]]
   if.app-id = 'com.spotify.client'
   run = ['move-node-to-workspace 4']  
@@ -202,3 +211,4 @@ automatically-unhide-macos-hidden-apps = true
   
 [workspace-to-monitor-force-assignment]
   5 = 'secondary'
+  6 = 'secondary'

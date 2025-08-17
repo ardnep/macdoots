@@ -9,7 +9,6 @@ export PATH="$PATH:$HOME/Library/Android/sdk/tools/bin"
 
 export PATH="$PATH:$HOME/dev/flutter/bin"
 export PATH="$PATH:$HOME/.config/emacs/bin/"
-export PATH="$PATH:$(yarn global bin)"
 export PATH="$PATH:$HOME/scripts/"
 
 export EDITOR=nvim
@@ -45,7 +44,6 @@ bindkey -M vicmd 'j' down-line-or-beginning-search
 VI_MODE_SET_CURSOR=true
 MODE_INDICATOR="%F{white}N%f"
 
-eval "$(fnm env --use-on-cd --shell zsh)"
 
 . "$HOME/.cargo/env"
 
@@ -59,3 +57,5 @@ function y() {
 
 zle -N y
 bindkey '^F' y
+eval "$(direnv hook zsh)"
+eval "$(zoxide init --cmd cd zsh)"
