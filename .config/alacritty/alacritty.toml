@@ -21,7 +21,7 @@ x = 10
 y = 10
 
 [general]
-import = ["~/.config/alacritty/everblush.toml"]
+import = ["~/.config/alacritty/rose-pine.toml"]
 
 [env]
 TERM = "xterm-256color"
