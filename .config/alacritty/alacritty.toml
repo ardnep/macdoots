@@ -8,7 +8,7 @@ style = "Regular"
 
 [window]
 decorations = "buttonless"
-opacity = 0.9
+opacity = 0.85
 blur = true
 title = "Alacritty"
 
