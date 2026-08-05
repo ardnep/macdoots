@@ -10,6 +10,7 @@ export PATH="$PATH:$HOME/Library/Android/sdk/tools/bin"
 export PATH="$PATH:$HOME/dev/flutter/bin"
 export PATH="$PATH:$HOME/.config/emacs/bin/"
 export PATH="$PATH:$HOME/scripts/"
+export PATH="$PATH:$(yarn global bin)"
 
 export EDITOR=nvim
 
@@ -20,6 +21,7 @@ plugins=(
 	vi-mode
 	zsh-autosuggestions
 	zsh-syntax-highlighting
+  bgnotify
 )
 
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
@@ -28,7 +30,6 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 alias f="yazi"
 alias ls="eza"
-alias cat="bat"
 alias t="tmux"
 alias ta="tmux attach"
 
@@ -58,4 +59,36 @@ function y() {
 zle -N y
 bindkey '^F' y
 eval "$(direnv hook zsh)"
-eval "$(zoxide init --cmd cd zsh)"
+if [[ "$CLAUDECODE" != "1" ]]; then
+    eval "$(zoxide init --cmd cd zsh)"
+fi
+
+. "$HOME/.local/bin/env"
+source $HOME/.local/bin/env
+
+
+# fnm
+FNM_PATH="/opt/homebrew/opt/fnm/bin"
+if [ -d "$FNM_PATH" ]; then
+  eval "`fnm env`"
+fi
+
+
+# bun completions
+[ -s "/Users/hypotenuseai/.bun/_bun" ] && source "/Users/hypotenuseai/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Added by Windsurf
+export PATH="/Users/hypotenuseai/.codeium/windsurf/bin:$PATH"
+
+# Added by Antigravity
+export PATH="/Users/hypotenuseai/.antigravity/antigravity/bin:$PATH"
+
+# Added by Antigravity
+export PATH="/Users/hypotenuseai/.antigravity/antigravity/bin:$PATH"
+
+# Pi
+export PATH="/Users/hypotenuseai/.local/share/fnm/node-versions/v22.20.0/installation/bin:$PATH"
