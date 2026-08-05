@@ -131,6 +131,9 @@ automatically-unhide-macos-hidden-apps = true
     alt-ctrl-h = 'workspace prev'
     alt-ctrl-l = 'workspace next'
 
+    # See: https://nikitabobko.github.io/AeroSpace/commands#focus-monitor
+    alt-m = 'focus-monitor --wrap-around next'
+
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
     alt-shift-1 = 'move-node-to-workspace 1'
     alt-shift-2 = 'move-node-to-workspace 2'
