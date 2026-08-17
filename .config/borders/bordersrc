@@ -4,7 +4,8 @@ options=(
     style=round
     hidpi=on
     width=5
-    active_color=0xFF8CCF7E
+    active_color=0xFFCBA6F7
+    inactive_color=0xFF45475A
     blur_radius=0.0
 )
 
