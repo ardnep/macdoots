@@ -102,7 +102,8 @@ automatically-unhide-macos-hidden-apps = true
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
     alt-slash = 'layout tiles horizontal vertical'
-    alt-comma = 'layout accordion horizontal vertical'
+    # Moved off alt-comma: that shadowed tmux's M-, (previous-window).
+    alt-shift-comma = 'layout accordion horizontal vertical'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#focus
     alt-h = 'focus left'
