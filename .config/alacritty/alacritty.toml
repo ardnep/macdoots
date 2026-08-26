@@ -7,6 +7,9 @@ family = "JetBrainsMono Nerd Font Mono"
 style = "Regular"
 
 [window]
+# macOS: send Alt/Meta instead of composing chars (é, ≤, …).
+# Switch to "OnlyRight" if you want the left Option back for typing special chars.
+option_as_alt = "Both"
 decorations = "buttonless"
 opacity = 1.0
 blur = true
