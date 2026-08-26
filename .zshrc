@@ -2,6 +2,10 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
+# Keep $path/$PATH deduplicated: every entry below is added at most once,
+# no matter how many nested shells re-source this file.
+typeset -U path PATH
+
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export ZSH="$HOME/.oh-my-zsh"
@@ -10,7 +14,6 @@ export PATH="$PATH:$HOME/Library/Android/sdk/tools/bin"
 export PATH="$PATH:$HOME/dev/flutter/bin"
 export PATH="$PATH:$HOME/.config/emacs/bin/"
 export PATH="$PATH:$HOME/scripts/"
-export PATH="$PATH:$(yarn global bin)"
 
 export EDITOR=nvim
 
@@ -46,7 +49,6 @@ VI_MODE_SET_CURSOR=true
 MODE_INDICATOR="%F{white}N%f"
 
 
-. "$HOME/.cargo/env"
 
 function y() {
   local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
@@ -64,7 +66,6 @@ if [[ "$CLAUDECODE" != "1" ]]; then
 fi
 
 . "$HOME/.local/bin/env"
-source $HOME/.local/bin/env
 
 
 # fnm
@@ -83,9 +84,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Added by Windsurf
 export PATH="/Users/hypotenuseai/.codeium/windsurf/bin:$PATH"
-
-# Added by Antigravity
-export PATH="/Users/hypotenuseai/.antigravity/antigravity/bin:$PATH"
 
 # Added by Antigravity
 export PATH="/Users/hypotenuseai/.antigravity/antigravity/bin:$PATH"
