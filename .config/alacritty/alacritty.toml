@@ -11,7 +11,7 @@ style = "Regular"
 # Switch to "OnlyRight" if you want the left Option back for typing special chars.
 option_as_alt = "Both"
 decorations = "buttonless"
-opacity = 1.0
+opacity = 0.9
 blur = true
 title = "Alacritty"
 
@@ -33,3 +33,4 @@ TERM = "xterm-256color"
 key = "L"
 mods = "Control|Shift"
 chars = "\u001b[99~"
+
