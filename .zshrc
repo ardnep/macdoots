@@ -15,6 +15,9 @@ export PATH="$PATH:$HOME/dev/flutter/bin"
 export PATH="$PATH:$HOME/.config/emacs/bin/"
 export PATH="$PATH:$HOME/scripts/"
 
+# OrbStack CLI tools (docker, docker-compose, docker-buildx, kubectl)
+export PATH="$PATH:/Applications/OrbStack.app/Contents/MacOS/xbin"
+
 export EDITOR=nvim
 
 ZSH_THEME="bira"
